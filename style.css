@@ -112,4 +112,16 @@ button:hover {
     100% {
         transform: rotate(0deg);
     }
+}.foto img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 20px;
+    margin: 15px;
+}
+
+marquee {
+    color: #ff4d6d;
+    font-size: 18px;
+    margin: 15px;
 }
