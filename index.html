@@ -7,9 +7,13 @@
 
 <body>
 
-<div class="hati">❤️</div>
+<div class="amplop" onclick="bukaSurat()">
+    💌
+    <p>klik untuk membuka surat</p>
+</div>
 
-<div class="surat">
+
+<div class="surat" id="surat">
 
 <h1>iballl adaa sesuatuuu yanggg inginnn iballl sampaikannn keee nanaaaa ❤️</h1>
 
@@ -18,15 +22,14 @@ haii cantik nanaaaa 🤍
 </p>
 
 <p>
-iballl mau minta maaf yaa...
-kalau selama ini ada kata-kata atau sikap iballl
-yang bikin nana sedih.
+iballl mau minta maaf yaa kalau selama ini
+ada sikap iballl yang bikin nana sedih atau kecewa.
 </p>
 
 <p>
 iballl sadar iballl masih banyak kurangnya,
-tapi iballl selalu mau belajar jadi lebih baik.
-makasih yaa nana udah tetap nemenin iballl sampai sekarang.
+tapi iballl selalu berusaha jadi lebih baik buat nana.
+makasih yaa udah tetap ada dan nemenin iballl.
 </p>
 
 <button onclick="pesan()">klik ini nana ❤️</button>
@@ -34,16 +37,24 @@ makasih yaa nana udah tetap nemenin iballl sampai sekarang.
 <p id="pesan"></p>
 
 <p>
-dari iballl yang selalu sayang nanaaa 🤍
+dari iballl 🤍
 </p>
 
 </div>
 
+
 <script>
-function pesan(){
-document.getElementById("pesan").innerHTML =
-"makasih sudah hadir di hidup iballl ❤️ jangan lupa senyum yaa nanaaa";
+
+function bukaSurat(){
+    document.querySelector(".amplop").style.display="none";
+    document.getElementById("surat").style.display="block";
 }
+
+function pesan(){
+    document.getElementById("pesan").innerHTML =
+    "makasih ya nanaaa sudah hadir di hidup iballl ❤️";
+}
+
 </script>
 
 </body>
