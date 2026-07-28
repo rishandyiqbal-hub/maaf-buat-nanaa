@@ -124,4 +124,23 @@ marquee {
     color: #ff4d6d;
     font-size: 18px;
     margin: 15px;
+}.galeri{
+    display:flex;
+    gap:15px;
+    justify-content:center;
+    flex-wrap:wrap;
+    margin:20px 0;
+}
+
+.galeri img{
+    width:180px;
+    height:180px;
+    object-fit:cover;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,.2);
+    transition:.3s;
+}
+
+.galeri img:hover{
+    transform:scale(1.08);
 }
